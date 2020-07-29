@@ -1,0 +1,38 @@
+@media screen and (max-width: 1004px) {
+	aside {
+		display: none;
+	}
+
+	#separator {
+		display: none;
+	}
+
+	#content {
+		width: 100%;
+
+		section {
+
+			.cards, .image-cards {
+				display: block;
+				overflow: auto;
+				white-space: nowrap;
+
+				.card, .image-card {
+					display: inline-block;
+					margin-bottom: 1.5rem;
+					white-space: initial;
+					max-width: 80vw;
+				}
+			}
+
+			.vuecal {
+				margin: 0 10px;
+			}
+
+			.map-image {
+				margin-left: 1rem;
+				max-width: calc(100% - 2rem);
+			}	
+		}
+	}
+}

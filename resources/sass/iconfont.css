@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'krasici';
+  src:  url('/fonts/krasici.eot');
+  src:  url('/fonts/krasici.eot?h22e4s#iefix') format('embedded-opentype'),
+    url('/fonts/krasici.ttf?h22e4s') format('truetype'),
+    url('/fonts/krasici.woff?h22e4s') format('woff'),
+    url('/fonts/krasici.svg?h22e4s#krasici') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i, .icomoon-liga {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'krasici' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tv-icon:before {
+  content: "\e900";
+}
+.radio-icon:before {
+  content: "\e901";
+}
+.wifi-icon:before {
+  content: "\e902";
+}
+.fan-icon:before {
+  content: "\e903";
+}
+.ac-icon:before {
+  content: "\e904";
+}
+.telephone-icon:before {
+  content: "\e905";
+}
+.refrigerator-icon:before {
+  content: "\e906";
+}
+.kettle-icon:before {
+  content: "\e907";
+}
+.dishwasher-icon:before {
+  content: "\e908";
+}
+.toaster-icon:before {
+  content: "\e909";
+}
+.stove-icon:before {
+  content: "\e90a";
+}
+.insinkerator-icon:before {
+  content: "\e90b";
+}
+.cupboard-icon:before {
+  content: "\e90c";
+}
+.linens-icon:before {
+  content: "\e90d";
+}
+.sofa-icon:before {
+  content: "\e90e";
+}
+.ironing-icon:before {
+  content: "\e90f";
+}
+.towel-icon:before {
+  content: "\e910";
+}
+.dryer-icon:before {
+  content: "\e911";
+}
+.shower-icon:before {
+  content: "\e912";
+}
+.washing-icon:before {
+  content: "\e913";
+}
+.toilet-icon:before {
+  content: "\e914";
+}
+.sink-icon:before {
+  content: "\e915";
+}
+.boiler-icon:before {
+  content: "\e916";
+}
+.swing-icon:before {
+  content: "\e917";
+}
+.tent-icon:before {
+  content: "\e918";
+}
+.deckchair-icon:before {
+  content: "\e919";
+}

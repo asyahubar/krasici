@@ -1,0 +1,46 @@
+// My typography
+$font-family-header: 'a_AlbionicNr_Bold', 'Lora', Futura, serif;
+$font-family-paragraphs: 'Marmelad', Roboto, Futura, sans-serif;
+$font-family-buttons: Roboto, sans-serif;
+$line-height-main: 1.4;
+$line-height-label: 0.9;
+
+// My colors
+$background: #fff;			// white
+$text-primary: #000; 		// black
+$text-secondary: #313A3A;   // light black
+$main: #4CB9C1;				// turquoise
+$main-dark: #138C94; 		// dark turquoise
+$main-light: #BEE3E3; 		// light turquoise
+$text-selection: #F6BB9D; 	// light peach
+$hr: #EDF2F4;				// light gray
+
+// Sizes
+$one: 4.2rem; // 4.5rem;
+$two: 3.3rem; // 3.6rem;
+$three: 2.5rem; // 2.8rem;
+$four: 2.3rem; // 2.5rem;
+$five: 1.7rem;
+
+
+%absolute-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+// Body
+// $body-bg: #f8fafc;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;

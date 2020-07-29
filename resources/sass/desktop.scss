@@ -1,0 +1,83 @@
+@media screen and (min-width: 1005px) {
+	.wrapper {
+		display: flex;
+		align-items: flex-start;
+
+		aside {
+			position: sticky;
+			position: -webkit-sticky;
+			top: 56px;
+			width: 18%;
+			display: inline-block;
+
+			div{
+				margin-left: 20px;
+				margin-top: 50px;
+				margin-bottom: 50px;
+
+				ul {
+
+					li {
+						margin-bottom: 5px;
+
+						a {
+							color: $main-light;
+							text-transform: uppercase;
+							font-family: $font-family-header;
+							font-size: 2.8rem;
+							transition: color 0.5s ease;
+
+							&:hover {
+								color: $main;
+							}
+						}
+					}
+
+					.active a {
+						color: $text-secondary;
+					}
+				}
+			}
+		}
+
+		#content {
+			display: inline-block;
+			width: 82%;
+			float: right;
+			background: linear-gradient(to bottom, $main-light, $main-dark);
+
+			section {
+				width: calc(100% - 10px);
+				float: right;
+				background-color: $background;
+
+				h2, p, header div {
+					margin-left: 90px;
+				}
+
+				.image-cards {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+
+					.image-card {
+						max-width: 32%;						
+					}
+				}
+
+				.cards {
+					display: flex;
+					flex-wrap: wrap;
+				}
+
+				.vuecal {
+					margin-left: 90px;
+				}
+
+				.map-image {
+					margin-left: 90px;
+				}
+			}
+		}
+	}
+}
