@@ -1,8 +1,8 @@
 /.idea
 /node_modules
-/public/hot
-/public/fonts
-/public/storage
+/public_html/hot
+/public_html/fonts
+/public_html/storage
 /storage/*.key
 /vendor
 .env
