@@ -105,7 +105,7 @@ return [
 		'header' => 'excursion spots of kotor bay',
 		'list' => [
 			'airport' => 'Airport',
-			'kotor' => 'Kotor (Pirate bay)',
+			'kotor' => 'Kotor',
 			'tivat' => 'Tivat',
 			'herceg_novi' => 'Herceg-Novi',
 			'flower_island' => 'Island of Flowers'
