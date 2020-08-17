@@ -13,6 +13,11 @@
 	animation-timing-function: linear;
 }
 
+%headers-margins {
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
 #main-img {
 	width: inherit;
 	max-height: 90vh;
@@ -104,8 +109,7 @@
 				margin: 0 1rem 2rem 0;
 
 				h4 {
-					margin-left: 1.5rem;
-					margin-top: 1.5rem;
+					@extend %headers-margins;
 				}
 
 				.uppercase {
@@ -134,8 +138,9 @@
 					// flex-wrap: wrap;
 					// justify-content: space-between;
 					display: grid;
-					grid-template-columns: 1fr 1fr 1fr;
-					padding: .5rem;
+					grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+					grid-gap: 10px;
+					padding-top: 10px;
 
 					div {
 						// width: 11rem;
@@ -209,12 +214,13 @@
 			margin: 20px 10px;
 			max-width: 745px;
 
-			h4 {
-				text-transform: capitalize;
+			h3 {
+				@extend %headers-margins;
 			}
 
 			ul {
 				font-size: $three;
+				@extend %headers-margins;
 
 				li {
 					margin: 20px 0;

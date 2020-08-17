@@ -184,6 +184,13 @@ footer img,
           animation-timing-function: linear;
 }
 
+#content section #conditions ul,
+#content section #conditions h3,
+#content section .cards .card h4 {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
 #main-img {
   width: inherit;
   max-height: 90vh;
@@ -275,11 +282,6 @@ footer img,
   margin: 0 1rem 2rem 0;
 }
 
-#content section .cards .card h4 {
-  margin-left: 1.5rem;
-  margin-top: 1.5rem;
-}
-
 #content section .cards .card .uppercase {
   text-transform: uppercase;
 }
@@ -304,8 +306,9 @@ footer img,
 
 #content section .cards .card .icon-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-gap: 10px;
+  padding-top: 10px;
 }
 
 #content section .cards .card .icon-list div {
@@ -375,10 +378,6 @@ footer img,
 #content section #conditions {
   margin: 20px 10px;
   max-width: 745px;
-}
-
-#content section #conditions h4 {
-  text-transform: capitalize;
 }
 
 #content section #conditions ul {
