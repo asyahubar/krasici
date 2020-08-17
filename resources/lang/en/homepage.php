@@ -86,6 +86,7 @@ return [
 					'deckchair' => '2 deckchairs'
 				]
 			]
+		]
 	],
 	'village' => [
 		'header' => 'Tiny village Krašići would surprise you',

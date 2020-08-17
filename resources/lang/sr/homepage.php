@@ -2,7 +2,7 @@
 
 return [
 	
-	'side_nav' => [
+	'sidenav' => [
 		'intro' => 'intro',
 		'apartaments' => 'apartman',
 		'village' => 'naselje',
@@ -10,28 +10,28 @@ return [
 		'bay' => 'zaliv',
 		'map' => 'mapa',
 		'calendar' => 'kalendar',
-		'call_to_contact' => 'kontakt'
+		'call_to_contact' => 'kontakt',
 	],
 	'intro' => [
-		'header' => 'ugodan apartman u krašićima'
-		'paragraph' => ''
+		'header' => 'ugodan apartman u krašićima',
+		'paragraph' => '*nesto*'
 	],
 	'flat' => [
 		'header' => 'apartman',
 		'rooms' => [
-			"do 7 gostiju",
-			"2 terase", 
-			"spavaća soba", 
-			"galerija",
-			"kuhinja",
-			"kupatilo"
+			'o 7 gostiju',
+			'2 terase',
+			'spavaća soba', 
+			'galerija',
+			'kuhinja',
+			'kupatilo',
 		],
 		'residence' => [
 			'header' => 'uslovi rentiranja',
 			'list' => [
 				'Deca od 6 godina',
 				'Zabranjeno pušenje',
-				'Bez domaćih ljubimaca'
+				'Bez domaćih ljubimaca',
 			]
 		],
 		'amenities' => [
@@ -43,7 +43,7 @@ return [
 					'ac' => 'klima uređaj',
 					'fan' => 'ventilator',
 					'radio' => 'radio',
-					'telephone' => 'telefon'
+					'telephone' => 'telefon',
 				]
 			],
 			'kitchen' => [
@@ -54,7 +54,7 @@ return [
 					'toaster' => 'toster',
 					'insinkerator' => 'drobilica otpada',
 					'dishwasher' => 'mašina za sudove',
-					'kettle' => 'električni bokal'
+					'kettle' => 'električni bokal',
 				]
 			],
 			'bedroom' => [
@@ -64,33 +64,33 @@ return [
 					'towel' => 'peškiri',
 					'sofa' => '2 ležaja za rasklapanje',
 					'ironing' => 'pegla sa daskom',
-					'linens' => 'posteljina'
+					'linens' => 'posteljina',
 				]
 			],
 			'bathroom' => [
 				'header' => 'kupatilo',
 				'list' => [
 					'shower' => 'tuš kabina',
-					'toilet' => 'wc',
+					'toilet' => 'WC',
 					'sink' => 'umivaonik',
 					'washing' => 'mašina za veš',
 					'boiler' => 'boijler',
-					'dryer' => 'fen za kosu'
+					'dryer' => 'fen za kosu',
 				]
 			],
 			'terrace' => [
-				'header' => 'тераса',
+				'header' => 'terasa',
 				'list' => [
-					'tent' => 'тент',
-					'swing' => 'гойдалка',
-					'deckchair' => 'шезлонги'
+					'tent' => 'tent',
+					'swing' => 'ljuljaška',
+					'deckchair' => 'ležaljke',
 				]
 			]
 		]
 	],
 	'village' => [
 		'header' => 'Gradić Krašići može da vam pruži',
-		'paragraph' => 'Пляжі з криштально чистою водою; пірс, з якого ходить катер з екскурсіями; 2 ресторани середньоморської кухні; 1 супермаркет і 3 крамниці; туристичне бюро; стара військова база; автобусна зупинка. І найголовніше, що все це знаходиться в межах 15 хвилин пішки.'
+		'paragraph' => 'Plaže sa kristalno čistom vodom-',
 	],
 	'beaches' => [
 		'header' => 'plaže',
@@ -103,13 +103,13 @@ return [
 		]
 	],
 	'bay' => [
-		'header' => 'розваги й переваги которської затоки',
+		'header' => 'kotorska boka',
 		'list' => [
 			'airport' => 'Aerodrom',
 			'kotor' => 'Kotor',
 			'tivat' => 'Tivat',
 			'herceg_novi' => 'Herceg-Novi',
-			'flower_island' => 'Ostrvo Cvijeća'
+			'flower_island' => 'Ostrvo Cvijeća',
 		]
 	],
 	'map' => 'mapa',
@@ -118,7 +118,7 @@ return [
 		'have_a_question' => 'Imate li pitanja?',
 		'ask_us' => 'Pitajte slobodno',
 		'book_now' => 'Kad možemo da vas očekujemo?',
-		'email' => 'info [at] krasici.me'
-	],
+		'email' => 'info [at] krasici.me',
+	]
 	
-]
+];

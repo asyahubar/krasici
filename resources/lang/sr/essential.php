@@ -2,9 +2,9 @@
 
 return [
 
-	'meta_desc' => 'Оренда апартаментів у Крашичах, Тіват, Чорногорія.',
-	'main_header' => 'Apartman u Krašićima, Crna Gora',
-	'book_button' => '',
+	'meta_desc' => ' Rentirati apartman u Krašićima, Crna Gora',
+	'main_header' => 'Apartman u Krašićima',
+	'book_button' => 'bukirati',
 	'footer' => [
 		'links' => [
 			'book' => '',
@@ -12,7 +12,7 @@ return [
 			'terms_of_service' => '',
 			'policies' => ''
 		],
-		'copyright' => ''
+		'copyright' => 'Silver Cinnamon'
 	]
 
 ];
