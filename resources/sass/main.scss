@@ -29,7 +29,7 @@
 
 #top-nav {
 	position: sticky;
-	position: -webkit-sticky;
+	--webkit-position: sticky;
 	top: -1px;
 	z-index: 2;
 
@@ -38,8 +38,9 @@
 		background-color: $hr;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 
-		a {
+		.homepage-link {
 			display: flex;
 			align-items: center;
 			color: 	$text-primary;
@@ -50,6 +51,44 @@
 				align-self: center;
 				margin: 0 15px;
 				@extend %spin;
+			}
+		}
+
+		.lang-switch {
+			overflow: hidden;
+			display: inline-block;
+			background-color: inherit;
+			justify-self: flex-end;
+
+			&:hover .lang-options, &:focus .lang-options {
+				display: block;
+			}
+
+			.lang-current, .lang-option {
+				max-height: 56px;				
+				background-color: $hr;
+			}
+
+			.lang-current {
+
+				a:focus .lang-options {
+					display: block;
+				}
+			}
+
+			.lang-options {
+				display: none;
+				position: absolute;
+			}
+
+			div {
+				text-align: center;
+			}
+
+			img {
+				height: 32px;
+				width: 32px;
+				padding: 12px;
 			}
 		}
 	}

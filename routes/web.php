@@ -11,12 +11,19 @@
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::group([
+	'prefix' => LaravelLocalization::setLocale(),
+	'middleware' => [ 'localizationRedirect' ]
+], function() {
 
-Route::get('/contact', 'ContactController@index')->name('contact.index');
-Route::post('/contact', 'ContactController@store')->name('contact.store');
+	Route::get('/', 'PageController@index')->name('homepage');
 
-// TODO: book, feedback and terms
+	Route::get('/contact', 'ContactController@index')->name('contact.index');
+	Route::post('/contact', 'ContactController@store')->name('contact.store');
+
+	// TODO: book, feedback and terms
+
+});
 
 
 Route::group(['prefix' => 'admin'], function () {
