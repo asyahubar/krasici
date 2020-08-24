@@ -256,6 +256,10 @@ footer img,
   position: absolute;
 }
 
+#top-nav nav .lang-switch .lang-options .lang-option:hover {
+  background-color: #BEE3E3;
+}
+
 #top-nav nav .lang-switch div {
   text-align: center;
 }

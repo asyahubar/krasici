@@ -79,6 +79,10 @@
 			.lang-options {
 				display: none;
 				position: absolute;
+
+				.lang-option:hover {
+					background-color: $main-light;					
+				}
 			}
 
 			div {
