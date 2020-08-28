@@ -110,6 +110,7 @@ return [
 			'tivat' => 'Tivat',
 			'herceg_novi' => 'Herceg-Novi',
 			'flower_island' => 'Ostrvo Cvijeća',
+			'igalo' => 'Igalo',
 		]
 	],
 	'map' => 'mapa',

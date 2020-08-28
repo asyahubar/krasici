@@ -109,7 +109,8 @@ return [
 			'kotor' => 'Kotor',
 			'tivat' => 'Tivat',
 			'herceg_novi' => 'Herceg-Novi',
-			'flower_island' => 'Island of Flowers'
+			'flower_island' => 'Island of Flowers',
+			'igalo' => 'Igalo',
 		]
 	],
 	'map' => 'location',
