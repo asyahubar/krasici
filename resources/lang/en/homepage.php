@@ -8,7 +8,7 @@ return [
 		'village' => 'village',
 		'beaches' => 'beaches',
 		'bay' => 'bay',
-		'map' => 'map',
+		// 'map' => 'map',
 		'calendar' => 'calendar',
 		'call_to_contact' => 'contact'
 	],
@@ -90,7 +90,7 @@ return [
 	],
 	'village' => [
 		'header' => 'Tiny village Krašići would surprise you',
-		'paragraph' => 'Take a swin in a crystal clear water of Kotor bay; go for a tour on a boat; dine at mediterranean restaurants, take a look at an old military base. The village has a travel agency, a bus stop, a market and 2 shops. Everything is less than 15 minutes away by foot!'
+		'paragraph' => 'Take a swim in a crystal clear water of Kotor bay; go for a tour on a boat; dine at mediterranean restaurants, take a look at an old military base. The village has a travel agency, a bus stop, a market and 2 shops. Everything is less than 15 minutes away by foot!'
 	],
 	'beaches' => [
 		'header' => 'beaches',

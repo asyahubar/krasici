@@ -3,7 +3,7 @@
 return [
 
 	'meta_desc' => 'Rent an apartment in Krasici, Tivat, Montenegro.',
-	'main_header' => 'Apartment in Krasici',
+	'title' => 'Apartment in Krasici',
 	'alt' => [
 		'favicon' => 'Pomegranate icon',
 		'lang_switch' => 'Switch to :lang language'
@@ -20,7 +20,7 @@ return [
 			'terms_of_service' => 'terms of service',
 			'policies' => 'privacy policies'
 		],
-		'copyright' => 'by Silver Cinnamon'
+		'dev_by' => 'by',
 	]
 
 ];

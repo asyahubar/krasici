@@ -3,7 +3,7 @@
 return [
 
 	'meta_desc' => 'Оренда апартаментів у Крашичах, Тіват, Чорногорія.',
-	'main_header' => 'Квартира в Крашичах',
+	'title' => 'Квартира в Крашичах',
 	'alt' => [
 		'favicon' => 'Іконка гранату',
 		'lang_switch' => 'Перейти на :lang мову'
@@ -20,7 +20,7 @@ return [
 			'terms_of_service' => '',
 			'policies' => ''
 		],
-		'copyright' => 'розроблено Silver Cinnamon'
+		'dev_by' => 'розроблено',
 	]
 
 ];

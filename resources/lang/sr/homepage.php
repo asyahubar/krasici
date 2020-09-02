@@ -8,7 +8,7 @@ return [
 		'village' => 'naselje',
 		'beaches' => 'plaže',
 		'bay' => 'zaliv',
-		'map' => 'mapa',
+		// 'map' => 'mapa',
 		'calendar' => 'kalendar',
 		'call_to_contact' => 'kontakt',
 	],

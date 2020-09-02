@@ -275,9 +275,8 @@
 			}
 		}
 
-		.map-image {
+		#map-comp {
 			max-width: 69.5rem;
-			height: auto;
 		}
 	}
 }
@@ -313,6 +312,14 @@ footer {
 		display: block;
 		color: $text-secondary;
 		font-size: 1.2rem;
+
+		a {
+			color: $main;
+
+			&:visited {
+				color: $main-dark;
+			}
+		}
 	}
 }
 

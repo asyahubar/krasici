@@ -51,7 +51,7 @@
 				float: right;
 				background-color: $background;
 
-				h2, p, header div {
+				h2, p, header div, .vue-cal, #map-comp, .vuecal {
 					margin-left: 90px;
 				}
 
@@ -68,14 +68,6 @@
 				.cards {
 					display: flex;
 					flex-wrap: wrap;
-				}
-
-				.vuecal {
-					margin-left: 90px;
-				}
-
-				.map-image {
-					margin-left: 90px;
 				}
 			}
 		}

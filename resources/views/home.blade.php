@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 
-@section('title', 'Rent apartment in Krašići, Montenegro')
-
-
 @section('above-fold')
 	<div id="main-img">
 		<vue-compare-image 
@@ -128,6 +125,8 @@
 			</div>
 			<h2>{{ __("homepage.village.header") }}</h2>
 			<p>{{ __("homepage.village.paragraph") }}</p>
+
+			<map-component show-krasici></map-component>
 		</section>
 
 		<section id="beaches">
@@ -174,19 +173,6 @@
 					</div>
 				@endforeach
 			</div>
-		</section>
-
-		<section id="map">
-			<h2>{{ __("homepage.map") }}</h2>
-			<img
-				data-sizes="auto"
-			    src="{{asset('storage/img_xs/map.png')}}"
-				srcset="
-					{{ asset('storage/img_s/map.png') }} 420w,
-				    {{ asset('storage/img_m/map.png') }} 695w,
-				    {{ asset('storage/img_l/map.png') }}  900w" 
-			    class="lazyload blur-up map-image" 
-			    title="{{__("homepage.map")}}" />
 		</section>
 
 		<section id="calendar">

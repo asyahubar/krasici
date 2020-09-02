@@ -6,7 +6,7 @@
         <meta name="description" content="{{ __("essential.meta_desc") }}">
         <meta name="theme-color" content="#4CB9C1">
 
-        <title>@yield('title')</title>
+        <title>{{__('essential.title')}}</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -20,7 +20,7 @@
                 <nav>
                     <a class="homepage-link" href="/">
                         <img class="favicon" src="{{ asset("storage/icons/pomegranate.png")}}" alt="{{ __('essential.alt.favicon') }}">
-                        <h1>{{ __("essential.main_header") }}</h1>
+                        <h1>{{ __("essential.title") }}</h1>
                     </a>
 
                     {{-- TODO: lang switch --}}
@@ -50,7 +50,12 @@
             
             <footer>
                 <img src="{{ asset('storage/icons/pomegranate.png') }}" alt="{{ __('essential.favicon_alt') }}">
-                <span>&copy; {{ __("essential.footer.copyright") }}</span>
+                <span>
+                    <?php echo date('Y'); ?> 
+                    &copy; 
+                    {{ __("essential.footer.dev_by") }} 
+                    <a href="http://silvercinnamon.me">Silver Cinnamon</a>
+                </span>
             </footer>
             
         </div>

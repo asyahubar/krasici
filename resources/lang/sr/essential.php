@@ -3,7 +3,7 @@
 return [
 
 	'meta_desc' => ' Rentirati apartman u Krašićima, Crna Gora',
-	'main_header' => 'Apartman u Krašićima',
+	'title' => 'Apartman u Krašićima',
 	'alt' => [
 		'favicon' => 'Ikonica nara',
 		'lang_switch' => 'Prebaci na :lang jezik'
@@ -20,7 +20,7 @@ return [
 			'terms_of_service' => '',
 			'policies' => ''
 		],
-		'copyright' => 'Silver Cinnamon'
+		'dev_by' => '',
 	]
 
 ];

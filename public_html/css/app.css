@@ -435,9 +435,8 @@ footer img,
   content: "- ";
 }
 
-#content section .map-image {
+#content section #map-comp {
   max-width: 69.5rem;
-  height: auto;
 }
 
 footer {
@@ -470,6 +469,14 @@ footer span {
   display: block;
   color: #313A3A;
   font-size: 1.2rem;
+}
+
+footer span a {
+  color: #4CB9C1;
+}
+
+footer span a:visited {
+  color: #138C94;
 }
 
 ::-webkit-scrollbar:vertical {
@@ -607,7 +614,7 @@ footer span {
     margin: 0 10px;
   }
 
-  #content section .map-image {
+  #content section #map-comp {
     margin-left: 1rem;
     max-width: calc(100% - 2rem);
   }
@@ -668,7 +675,10 @@ footer span {
 
   .wrapper #content section h2,
   .wrapper #content section p,
-  .wrapper #content section header div {
+  .wrapper #content section header div,
+  .wrapper #content section .vue-cal,
+  .wrapper #content section #map-comp,
+  .wrapper #content section .vuecal {
     margin-left: 90px;
   }
 
@@ -685,14 +695,6 @@ footer span {
   .wrapper #content section .cards {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .wrapper #content section .vuecal {
-    margin-left: 90px;
-  }
-
-  .wrapper #content section .map-image {
-    margin-left: 90px;
   }
 }
 

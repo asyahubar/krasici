@@ -8,7 +8,7 @@ return [
 		'village' => 'поселення',
 		'beaches' => 'пляжі',
 		'bay' => 'поряд',
-		'map' => 'мапа',
+		// 'map' => 'мапа',
 		'calendar' => 'календар',
 		'call_to_contact' => 'зв’язатися'
 	],
