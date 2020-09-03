@@ -11,6 +11,7 @@ return [
 	'langs' => [
 		'en' => 'engleski',
 		'uk' => 'ukrajinski',
+		'ru' => 'ruski',
 	],
 	'book_button' => 'bukirati',
 	'footer' => [

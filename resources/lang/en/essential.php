@@ -11,6 +11,7 @@ return [
 	'langs' => [
 		'uk' => 'Ukrainian',
 		'sr' => 'Serbian',
+		'ru' => 'Russian',
 	],
 	'book_button' => 'book',
 	'footer' => [
