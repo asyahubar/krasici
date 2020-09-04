@@ -27,7 +27,7 @@
         "@babel/core": "^7.10.4",
         "lazysizes": "^5.2.2",
         "leaflet": "^1.6.0",
-        "vue-cal": "^3.6.3",
+        "vue-cal": "^3.6.5",
         "vue-compare-image": "^0.2.0",
         "vue2-leaflet": "^2.5.2",
         "vue2-scrollspy": "^2.3.1"
