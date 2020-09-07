@@ -18,4 +18,15 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # Redirect www to non-www
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www.xn--kraii-jxa24d.me [NC]
+    RewriteRule ^(.*)$ https://xn--kraii-jxa24d.me/$1 [L,R=301]
+
+    # Remove index
+    RewriteCond %{REQUEST_URI} !/$ [NC]
+    RewriteCond %{REQUEST_URI} /index.(html?|php)$ [NC]
+    RewriteRule .* http://xn--kraii-jxa24d.me/ [R=301,L]
+
 </IfModule>

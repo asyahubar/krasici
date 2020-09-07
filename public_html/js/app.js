@@ -2836,6 +2836,57 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CalComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CalComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_cal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-cal */ "./node_modules/vue-cal/dist/vuecal.common.js");
+/* harmony import */ var vue_cal__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_cal__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    VueCal: vue_cal__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
+  props: {
+    locale: String
+  },
+  data: function data() {
+    return {
+      events: [{
+        start: '2020-09-12',
+        end: '2020-09-26',
+        title: '',
+        content: '',
+        "class": 'booked-period'
+      }]
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ImageCardComponent.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ImageCardComponent.vue?vue&type=script&lang=js& ***!
@@ -53599,7 +53650,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-(("undefined"!==typeof self?self:this)["webpackJsonpvuecal"]=("undefined"!==typeof self?self:this)["webpackJsonpvuecal"]||[]).push([[34],{"7dc6":function(e){e.exports=JSON.parse('{"weekDays":["Понеділок","Вівторок","Середа","Четвер","П\'ятниця","Субота","Неділя"],"months":["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"],"years":"Роки","year":"Рік","month":"Місяць","week":"Тиждень","day":"День","today":"Сьогодні","noEvent":"Немає подій","allDay":"Весь день","deleteEvent":"Видалити","createEvent":"Створити подію","dateFormat":"dddd D MMMM YYYY"}')}}]);
+(("undefined"!==typeof self?self:this)["webpackJsonpvuecal"]=("undefined"!==typeof self?self:this)["webpackJsonpvuecal"]||[]).push([[34],{"7dc6":function(e){e.exports=JSON.parse('{"weekDays":["Понеділок","Вівторок","Середа","Четвер","П\'ятниця","Субота","Неділя"],"months":["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"],"weekDaysShort":["Пн","Вт","Ср","Чт","Пт","Сб","Нд"],"years":"Роки","year":"Рік","month":"Місяць","week":"Тиждень","day":"День","today":"Сьогодні","noEvent":"Немає подій","allDay":"Весь день","deleteEvent":"Видалити","createEvent":"Створити подію","dateFormat":"dddd D MMMM YYYY"}')}}]);
 
 /***/ }),
 
@@ -56599,7 +56650,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   } else {}
 }(typeof self !== 'undefined' ? self : this, function () {
   function getCurrentScript () {
-    if (document.currentScript) {
+    var descriptor = Object.getOwnPropertyDescriptor(document, 'currentScript')
+    // for chrome
+    if (!descriptor && 'currentScript' in document && document.currentScript) {
+      return document.currentScript
+    }
+
+    // for other browsers with native support for currentScript
+    if (descriptor && descriptor.get !== getCurrentScript && document.currentScript) {
       return document.currentScript
     }
   
@@ -59110,7 +59168,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d747d8e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/index.vue?vue&type=template&id=cad5c1a8&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1672cc83-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/index.vue?vue&type=template&id=239f740b&lang=pug&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"vuecal",staticClass:"vuecal__flex vuecal",class:_vm.cssClasses,attrs:{"column":"","lang":_vm.locale}},[_c('vuecal-header',{attrs:{"options":_vm.$props,"edit-events":_vm.editEvents,"view-props":{ views: _vm.views, weekDaysInHeader: _vm.weekDaysInHeader },"week-days":_vm.weekDays,"has-splits":_vm.hasSplits,"day-splits":_vm.daySplits,"switch-to-narrower-view":_vm.switchToNarrowerView},scopedSlots:_vm._u([{key:"arrow-prev",fn:function(){return [_vm._t("arrow-prev",[_vm._v(" "),_c('i',{staticClass:"angle"}),_vm._v(" ")])]},proxy:true},{key:"arrow-next",fn:function(){return [_vm._t("arrow-next",[_vm._v(" "),_c('i',{staticClass:"angle"}),_vm._v(" ")])]},proxy:true},{key:"today-button",fn:function(){return [_vm._t("today-button",[_c('span',{staticClass:"default"},[_vm._v(_vm._s(_vm.texts.today))])])]},proxy:true},{key:"title",fn:function(){return [_vm._t("title",[_vm._v(_vm._s(_vm.viewTitle))],{"title":_vm.viewTitle,"view":_vm.view})]},proxy:true},{key:"weekday-heading",fn:function(ref){
 var heading = ref.heading;
 var view = ref.view;
@@ -59134,11 +59192,11 @@ var selectCell = ref.selectCell;
 return [_vm._t("cell-content",[(split && !_vm.stickySplitLabels)?_c('div',{staticClass:"split-label",domProps:{"innerHTML":_vm._s(split.label)}}):_vm._e(),(cell.content)?_c('div',{staticClass:"vuecal__cell-date",domProps:{"innerHTML":_vm._s(cell.content)}}):_vm._e(),(((_vm.isMonthView && !_vm.eventsOnMonthView) || (_vm.isYearsOrYearView && _vm.eventsCountOnYearView)) && events.length)?_c('div',{staticClass:"vuecal__cell-events-count"},[_vm._t("events-count",[_vm._v(_vm._s(events.length))],{"view":_vm.view,"events":events})],2):_vm._e(),(!_vm.cellOrSplitHasEvents(events, split) && _vm.isWeekOrDayView)?_c('div',{staticClass:"vuecal__no-event"},[_vm._t("no-event",[_vm._v(_vm._s(_vm.texts.noEvent))])],2):_vm._e()],{"cell":cell,"view":_vm.view,"goNarrower":selectCell,"events":events})]}},{key:"event",fn:function(ref){
 var event = ref.event;
 var view = ref.view;
-return [_vm._t("event",[(_vm.editEvents.title && event.titleEditable)?_c('div',{staticClass:"vuecal__event-title vuecal__event-title--edit",attrs:{"contenteditable":""},domProps:{"innerHTML":_vm._s(event.title)},on:{"blur":function($event){return _vm.onEventTitleBlur($event, event)}}}):(event.title)?_c('div',{staticClass:"vuecal__event-title",domProps:{"innerHTML":_vm._s(event.title)}}):_vm._e(),(_vm.time && !event.allDay && !(_vm.isMonthView && (event.allDay || _vm.showAllDayEvents === 'short')) && !_vm.isShortMonthView)?_c('div',{staticClass:"vuecal__event-time"},[_vm._v(_vm._s(_vm.utils.date.formatTime(event.start))),(event.endTimeMinutes)?_c('span',[_vm._v(" - "+_vm._s(_vm.utils.date.formatTime(event.end)))]):_vm._e(),(event.daysCount > 1 && (event.segments[cell.formattedDate] || {}).isFirstDay)?_c('small',{staticClass:"days-to-end"},[_vm._v(" +"+_vm._s(event.daysCount - 1)+_vm._s((_vm.texts.day[0] || '').toLowerCase()))]):_vm._e()]):_vm._e(),(event.content && !(_vm.isMonthView && event.allDay && _vm.showAllDayEvents === 'short') && !_vm.isShortMonthView)?_c('div',{staticClass:"vuecal__event-content",domProps:{"innerHTML":_vm._s(event.content)}}):_vm._e()],{"view":view,"event":event})]}}],null,true)},[_vm._t("default")],2)}),1)],1)])])],1)]),(!_vm.ready)?_c('div',{staticClass:"vuecal__scrollbar-check"},[_c('div')]):_vm._e()],1):_vm._e()],1)}
+return [_vm._t("event",[(_vm.editEvents.title && event.titleEditable)?_c('div',{staticClass:"vuecal__event-title vuecal__event-title--edit",attrs:{"contenteditable":""},domProps:{"innerHTML":_vm._s(event.title)},on:{"blur":function($event){return _vm.onEventTitleBlur($event, event)}}}):(event.title)?_c('div',{staticClass:"vuecal__event-title",domProps:{"innerHTML":_vm._s(event.title)}}):_vm._e(),(_vm.time && !event.allDay && !(_vm.isMonthView && (event.allDay || _vm.showAllDayEvents === 'short')) && !_vm.isShortMonthView)?_c('div',{staticClass:"vuecal__event-time"},[_vm._v(_vm._s(_vm.utils.date.formatTime(event.start, _vm.TimeFormat))),(event.endTimeMinutes)?_c('span',[_vm._v(" - "+_vm._s(_vm.utils.date.formatTime(event.end, _vm.TimeFormat, null, true)))]):_vm._e(),(event.daysCount > 1 && (event.segments[cell.formattedDate] || {}).isFirstDay)?_c('small',{staticClass:"days-to-end"},[_vm._v(" +"+_vm._s(event.daysCount - 1)+_vm._s((_vm.texts.day[0] || '').toLowerCase()))]):_vm._e()]):_vm._e(),(event.content && !(_vm.isMonthView && event.allDay && _vm.showAllDayEvents === 'short') && !_vm.isShortMonthView)?_c('div',{staticClass:"vuecal__event-content",domProps:{"innerHTML":_vm._s(event.content)}}):_vm._e()],{"view":view,"event":event})]}}],null,true)},[_vm._t("default")],2)}),1)],1)])])],1)]),(!_vm.ready)?_c('div',{staticClass:"vuecal__scrollbar-check"},[_c('div')]):_vm._e()],1):_vm._e()],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/vue-cal/index.vue?vue&type=template&id=cad5c1a8&lang=pug&
+// CONCATENATED MODULE: ./src/vue-cal/index.vue?vue&type=template&id=239f740b&lang=pug&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
@@ -59212,9 +59270,6 @@ var es_symbol_description = __webpack_require__("e01a");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.iterator.js
 var es_symbol_iterator = __webpack_require__("d28b");
 
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.iterator.js
-var es_array_iterator = __webpack_require__("e260");
-
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.iterator.js
 var es_string_iterator = __webpack_require__("3ca3");
 
@@ -59222,7 +59277,6 @@ var es_string_iterator = __webpack_require__("3ca3");
 var web_dom_collections_iterator = __webpack_require__("ddb0");
 
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
-
 
 
 
@@ -59263,7 +59317,6 @@ function _arrayWithoutHoles(arr) {
 var es_array_from = __webpack_require__("a630");
 
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
-
 
 
 
@@ -59699,6 +59752,7 @@ var date_DateUtils = /*#__PURE__*/function () {
      * @param {Object} texts Optional: the localized texts object to override the vue-cal one in this._texts.
      *                       This becomes useful when showing multiple instances with different languages,
      *                       like in the documentation page.
+     * @param {Boolean} round if time is 23:59:59, rounds up to 24:00 for formatting only.
      * @return {String} the formatted time.
      */
 
@@ -59707,17 +59761,31 @@ var date_DateUtils = /*#__PURE__*/function () {
     value: function formatTime(date) {
       var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'HH:mm';
       var texts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-      if (date instanceof Date && format === 'HH:mm') return this.formatTimeLite(date);
+      var round = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+      var shouldRound = false;
+
+      if (round) {
+        var _ref = [date.getHours(), date.getMinutes(), date.getSeconds()],
+            h = _ref[0],
+            m = _ref[1],
+            s = _ref[2];
+        if (h + m + s === 23 + 59 + 59) shouldRound = true;
+      }
+
+      if (date instanceof Date && format === 'HH:mm') return shouldRound ? '24:00' : this.formatTimeLite(date);
       _timeObject = {}; // Reinit the time object on each function call.
 
       if (!texts) texts = this._texts;
 
       var timeObj = this._hydrateTimeObject(date, texts);
 
-      return format.replace(/(\{[a-zA-Z]+\}|[a-zA-Z]+)/g, function (m, contents) {
+      var formatted = format.replace(/(\{[a-zA-Z]+\}|[a-zA-Z]+)/g, function (m, contents) {
         var result = timeObj[contents.replace(/\{|\}/g, '')];
         return result !== undefined ? result : contents;
-      });
+      }); // Round 23:59:59 to 24:00. For 12-hour format there is nothing to replace: as both are 12am.
+      // Also don't return `24:00` straight away as the user format may be different.
+
+      return shouldRound ? formatted.replace('23:59', '24:00') : formatted;
     }
     /**
      * Formats a time to 'HH:mm' from a Date and returns the formatted string.
@@ -60160,9 +60228,9 @@ var event_EventUtils = /*#__PURE__*/function () {
       if (previousSegment) {
         previousSegment.isLastDay = false;
         previousSegment.endTimeMinutes = event_minutesInADay;
-      } else {} // @todo: when moving fast might lose the previousSegment.
-      // Trying to update it would then result in an error, but do nothing would create a visual bug.
-      // Create the new last segment.
+      } else {// @todo: when moving fast might lose the previousSegment.
+        // Trying to update it would then result in an error, but do nothing would create a visual bug.
+      } // Create the new last segment.
 
 
       var start = event_ud.addDays(e.end, 1);
@@ -60485,7 +60553,7 @@ var event_EventUtils = /*#__PURE__*/function () {
 }();
 
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d747d8e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/header.vue?vue&type=template&id=760d6e75&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1672cc83-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/header.vue?vue&type=template&id=760d6e75&lang=pug&
 var headervue_type_template_id_760d6e75_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__header"},[(!_vm.options.hideViewSelector)?_c('div',{staticClass:"vuecal__flex vuecal__menu",attrs:{"role":"tablist","aria-label":"Calendar views navigation"}},_vm._l((_vm.viewProps.views),function(v,id){return (v.enabled)?_c('button',{staticClass:"vuecal__view-btn",class:{ 'vuecal__view-btn--active': _vm.view.id === id, 'vuecal__view-btn--highlighted': _vm.highlightedControl === id },attrs:{"type":"button","aria-label":((v.label) + " view")},on:{"dragenter":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragEnter($event, id, _vm.$data)},"dragleave":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragLeave($event, id, _vm.$data)},"click":function($event){return _vm.switchView(id, null, true)}}},[_vm._v(_vm._s(v.label))]):_vm._e()}),0):_vm._e(),(!_vm.options.hideTitleBar)?_c('div',{staticClass:"vuecal__title-bar"},[_c('button',{staticClass:"vuecal__arrow vuecal__arrow--prev",class:{ 'vuecal__arrow--highlighted': _vm.highlightedControl === 'previous' },attrs:{"type":"button","aria-label":("Previous " + (_vm.view.id))},on:{"click":_vm.previous,"dragenter":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragEnter($event, 'previous', _vm.$data)},"dragleave":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragLeave($event, 'previous', _vm.$data)}}},[_vm._t("arrow-prev")],2),_c('div',{staticClass:"vuecal__flex vuecal__title",attrs:{"grow":""}},[_c(_vm.options.transitions ? 'transition' : 'div',{tag:"component",attrs:{"name":("slide-fade--" + _vm.transitionDirection)}},[_c(_vm.broaderView ? 'button' : 'span',{key:("" + (_vm.view.id) + (_vm.view.startDate.toString())),tag:"component",attrs:{"type":!!_vm.broaderView && 'button',"aria-label":!!_vm.broaderView && ("Go to " + _vm.broaderView + " view")},on:{"click":function($event){!!_vm.broaderView && _vm.switchToBroaderView()}}},[_vm._t("title")],2)],1)],1),(_vm.options.todayButton)?_c('button',{staticClass:"vuecal__today-btn",class:{ 'vuecal__today-btn--highlighted': _vm.highlightedControl === 'today' },attrs:{"type":"button","aria-label":"Today"},on:{"click":_vm.goToToday,"dragenter":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragEnter($event, 'today', _vm.$data)},"dragleave":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragLeave($event, 'today', _vm.$data)}}},[_vm._t("today-button")],2):_vm._e(),_c('button',{staticClass:"vuecal__arrow vuecal__arrow--next",class:{ 'vuecal__arrow--highlighted': _vm.highlightedControl === 'next' },attrs:{"type":"button","aria-label":("Next " + (_vm.view.id))},on:{"click":_vm.next,"dragenter":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragEnter($event, 'next', _vm.$data)},"dragleave":function($event){_vm.editEvents.drag && _vm.dnd && _vm.dnd.viewSelectorDragLeave($event, 'next', _vm.$data)}}},[_vm._t("arrow-next")],2)]):_vm._e(),(_vm.viewProps.weekDaysInHeader)?_c('weekdays-headings',{attrs:{"week-days":_vm.weekDays,"transition-direction":_vm.transitionDirection,"switch-to-narrower-view":_vm.switchToNarrowerView},scopedSlots:_vm._u([{key:"weekday-heading",fn:function(ref){
 var heading = ref.heading;
 var view = ref.view;
@@ -60497,7 +60565,7 @@ var headervue_type_template_id_760d6e75_lang_pug_staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/vue-cal/header.vue?vue&type=template&id=760d6e75&lang=pug&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d747d8e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/weekdays-headings.vue?vue&type=template&id=6662afd4&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1672cc83-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/weekdays-headings.vue?vue&type=template&id=6662afd4&lang=pug&
 var weekdays_headingsvue_type_template_id_6662afd4_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__flex vuecal__weekdays-headings"},_vm._l((_vm.headings),function(heading,i){return (!heading.hide)?_c('div',{key:i,staticClass:"vuecal__flex vuecal__heading",class:{ today: heading.today, clickable: _vm.cellHeadingsClickable },style:(_vm.weekdayCellStyles),on:{"click":function($event){_vm.view.id === 'week' && _vm.selectCell(heading.date, $event)},"dblclick":function($event){_vm.view.id === 'week' && _vm.vuecal.dblclickToNavigate && _vm.switchToNarrowerView()}}},[_c('transition',{attrs:{"name":("slide-fade--" + _vm.transitionDirection),"appear":_vm.vuecal.transitions}},[_c('div',{key:_vm.vuecal.transitions ? (i + "-" + (heading.dayOfMonth)) : false,staticClass:"vuecal__flex",attrs:{"column":""}},[_c('div',{staticClass:"vuecal__flex weekday-label",attrs:{"grow":""}},[_vm._t("weekday-heading",[_c('span',{staticClass:"full"},[_vm._v(_vm._s(heading.full))]),_c('span',{staticClass:"small"},[_vm._v(_vm._s(heading.small))]),_c('span',{staticClass:"xsmall"},[_vm._v(_vm._s(heading.xsmall))]),(heading.dayOfMonth)?_c('span',[_vm._v(" "+_vm._s(heading.dayOfMonth))]):_vm._e()],{"heading":_vm.cleanupHeading(heading),"view":_vm.view})],2),(_vm.vuecal.hasSplits && _vm.vuecal.stickySplitLabels)?_c('div',{staticClass:"vuecal__flex vuecal__split-days-headers",attrs:{"grow":""}},_vm._l((_vm.vuecal.daySplits),function(split,i){return _c('div',{key:i,staticClass:"day-split-header",class:split.class || false},[_vm._t("split-label",[_vm._v(_vm._s(split.label))],{"split":split,"view":_vm.view})],2)}),0):_vm._e()])])],1):_vm._e()}),0)}
 var weekdays_headingsvue_type_template_id_6662afd4_lang_pug_staticRenderFns = []
 
@@ -60915,7 +60983,7 @@ var header_component = normalizeComponent(
 )
 
 /* harmony default export */ var header = (header_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d747d8e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/all-day-bar.vue?vue&type=template&id=20856694&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1672cc83-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/all-day-bar.vue?vue&type=template&id=20856694&lang=pug&
 var all_day_barvue_type_template_id_20856694_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__flex vuecal__all-day",style:(_vm.cellOrSplitMinWidth && { height: _vm.height })},[(!_vm.cellOrSplitMinWidth)?_c('div',{staticClass:"vuecal__all-day-text",staticStyle:{"width":"3em"}},[_c('span',[_vm._v(_vm._s(_vm.label))])]):_vm._e(),_c('div',{staticClass:"vuecal__flex vuecal__cells",class:((_vm.view.id) + "-view"),style:(_vm.cellOrSplitMinWidth ? ("min-width: " + _vm.cellOrSplitMinWidth + "px") : ''),attrs:{"grow":""}},_vm._l((_vm.cells),function(cell,i){return _c('vuecal-cell',{key:i,attrs:{"options":_vm.options,"edit-events":_vm.editEvents,"data":cell,"all-day":true,"cell-width":_vm.options.hideWeekdays.length && (_vm.vuecal.isWeekView || _vm.vuecal.isMonthView) && _vm.vuecal.cellWidth,"min-timestamp":_vm.options.minTimestamp,"max-timestamp":_vm.options.maxTimestamp,"cell-splits":_vm.daySplits},scopedSlots:_vm._u([{key:"event",fn:function(ref){
 var event = ref.event;
 var view = ref.view;
@@ -60925,7 +60993,7 @@ var all_day_barvue_type_template_id_20856694_lang_pug_staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/vue-cal/all-day-bar.vue?vue&type=template&id=20856694&lang=pug&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d747d8e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/cell.vue?vue&type=template&id=f6077978&lang=pug&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1672cc83-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/cell.vue?vue&type=template&id=f6077978&lang=pug&
 var cellvue_type_template_id_f6077978_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition-group',{staticClass:"vuecal__cell",class:_vm.cellClasses,style:(_vm.cellStyles),attrs:{"name":("slide-fade--" + _vm.transitionDirection),"tag":"div","appear":_vm.options.transitions}},[_vm._l(((_vm.splitsCount ? _vm.splits : 1)),function(split,i){return _c('div',{key:_vm.options.transitions ? ((_vm.view.id) + "-" + (_vm.data.content) + "-" + i) : i,staticClass:"vuecal__flex vuecal__cell-content",class:_vm.splitsCount && _vm.splitClasses(split),attrs:{"data-split":_vm.splitsCount ? split.id : false,"column":"","tabindex":"0","aria-label":_vm.data.content},on:{"focus":function($event){return _vm.onCellFocus($event)},"keypress":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.onCellkeyPressEnter($event)},"touchstart":function($event){!_vm.isDisabled && _vm.onCellTouchStart($event, _vm.splitsCount ? split.id : null)},"mousedown":function($event){!_vm.isDisabled && _vm.onCellMouseDown($event, _vm.splitsCount ? split.id : null)},"click":function($event){!_vm.isDisabled && _vm.onCellClick($event)},"dblclick":function($event){!_vm.isDisabled && _vm.onCellDblClick($event)},"contextmenu":function($event){!_vm.isDisabled && _vm.options.cellContextmenu && _vm.onCellContextMenu($event)},"dragenter":function($event){!_vm.isDisabled && _vm.editEvents.drag && _vm.dnd && _vm.dnd.cellDragEnter($event, _vm.$data, _vm.data.startDate)},"dragover":function($event){!_vm.isDisabled && _vm.editEvents.drag && _vm.dnd && _vm.dnd.cellDragOver($event, _vm.$data, _vm.data.startDate, _vm.splitsCount ? split.id : null)},"dragleave":function($event){!_vm.isDisabled && _vm.editEvents.drag && _vm.dnd && _vm.dnd.cellDragLeave($event, _vm.$data, _vm.data.startDate)},"drop":function($event){!_vm.isDisabled && _vm.editEvents.drag && _vm.dnd && _vm.dnd.cellDragDrop($event, _vm.$data, _vm.data.startDate, _vm.splitsCount ? split.id : null)}}},[(_vm.isWeekOrDayView && !_vm.allDay && _vm.specialHours.from !== null)?_c('div',{staticClass:"vuecal__special-hours",class:("vuecal__special-hours--day" + (_vm.specialHours.day) + " " + (_vm.specialHours.class)),style:(("height: " + (_vm.specialHours.height) + "px;top: " + (_vm.specialHours.top) + "px"))}):_vm._e(),_vm._t("cell-content",null,{"events":_vm.events,"selectCell":function ($event) { return _vm.selectCell($event, true); },"split":_vm.splitsCount ? split : false}),(_vm.eventsCount && (_vm.isWeekOrDayView || (_vm.view.id === 'month' && _vm.options.eventsOnMonthView)))?_c('div',{staticClass:"vuecal__cell-events"},_vm._l(((_vm.splitsCount ? split.events : _vm.events)),function(event,j){return _c('event',{key:j,attrs:{"cell-formatted-date":_vm.data.formattedDate,"event":event,"all-day":_vm.allDay,"cell-events":_vm.splitsCount ? split.events : _vm.events,"overlaps":((_vm.splitsCount ? split.overlaps[event._eid] : _vm.cellOverlaps[event._eid]) || []).overlaps,"event-position":((_vm.splitsCount ? split.overlaps[event._eid] : _vm.cellOverlaps[event._eid]) || []).position,"overlaps-streak":_vm.splitsCount ? split.overlapsStreak : _vm.cellOverlapsStreak},scopedSlots:_vm._u([{key:"event",fn:function(ref){
 var event = ref.event;
 var view = ref.view;
@@ -60940,7 +61008,6 @@ function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
-
 
 
 
@@ -60985,12 +61052,12 @@ function _nonIterableRest() {
 function _slicedToArray(arr, i) {
   return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2d747d8e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/event.vue?vue&type=template&id=74481f79&lang=pug&
-var eventvue_type_template_id_74481f79_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__event",class:_vm.eventClasses,style:(_vm.eventStyles),attrs:{"tabindex":"0","draggable":_vm.draggable},on:{"focus":_vm.focusEvent,"keypress":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.stopPropagation();return _vm.onEnterKeypress($event)},"mouseenter":_vm.onMouseEnter,"mouseleave":_vm.onMouseLeave,"touchstart":function($event){$event.stopPropagation();return _vm.onTouchStart($event)},"mousedown":function($event){_vm.onMouseDown($event) /* Don't stop mousedown propagation. See in onMouseDown(). */},"mouseup":_vm.onMouseUp,"dblclick":_vm.onDblClick,"dragstart":function($event){_vm.draggable && _vm.onDragStart($event)},"dragend":function($event){_vm.draggable && _vm.onDragEnd()}}},[(_vm.vuecal.editEvents.delete && _vm.event.deletable)?_c('div',{staticClass:"vuecal__event-delete",on:{"click":function($event){$event.stopPropagation();return _vm.deleteEvent($event)},"touchstart":function($event){$event.stopPropagation();return _vm.touchDeleteEvent($event)}}},[_vm._v(_vm._s(_vm.vuecal.texts.deleteEvent))]):_vm._e(),_vm._t("event",null,{"event":_vm.event,"view":_vm.view.id}),(_vm.resizable)?_c('div',{staticClass:"vuecal__event-resize-handle",attrs:{"contenteditable":"false"},on:{"mousedown":function($event){$event.stopPropagation();$event.preventDefault();return _vm.onResizeHandleMouseDown($event)},"touchstart":function($event){$event.stopPropagation();$event.preventDefault();return _vm.onResizeHandleMouseDown($event)}}}):_vm._e()],2)}
-var eventvue_type_template_id_74481f79_lang_pug_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1672cc83-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/event.vue?vue&type=template&id=36fac408&lang=pug&
+var eventvue_type_template_id_36fac408_lang_pug_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vuecal__event",class:_vm.eventClasses,style:(_vm.eventStyles),attrs:{"tabindex":"0","draggable":_vm.draggable},on:{"focus":_vm.focusEvent,"keypress":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.stopPropagation();return _vm.onEnterKeypress($event)},"mouseenter":_vm.onMouseEnter,"mouseleave":_vm.onMouseLeave,"touchstart":function($event){$event.stopPropagation();return _vm.onTouchStart($event)},"mousedown":function($event){_vm.onMouseDown($event) /* Don't stop mousedown propagation. See in onMouseDown(). */},"mouseup":_vm.onMouseUp,"touchend":_vm.onMouseUp,"touchmove":_vm.onTouchMove,"dblclick":_vm.onDblClick,"dragstart":function($event){_vm.draggable && _vm.onDragStart($event)},"dragend":function($event){_vm.draggable && _vm.onDragEnd()}}},[(_vm.vuecal.editEvents.delete && _vm.event.deletable)?_c('div',{staticClass:"vuecal__event-delete",on:{"click":function($event){$event.stopPropagation();return _vm.deleteEvent($event)},"touchstart":function($event){$event.stopPropagation();return _vm.touchDeleteEvent($event)}}},[_vm._v(_vm._s(_vm.vuecal.texts.deleteEvent))]):_vm._e(),_vm._t("event",null,{"event":_vm.event,"view":_vm.view.id}),(_vm.resizable)?_c('div',{staticClass:"vuecal__event-resize-handle",attrs:{"contenteditable":"false"},on:{"mousedown":function($event){$event.stopPropagation();$event.preventDefault();return _vm.onResizeHandleMouseDown($event)},"touchstart":function($event){$event.stopPropagation();$event.preventDefault();return _vm.onResizeHandleMouseDown($event)}}}):_vm._e()],2)}
+var eventvue_type_template_id_36fac408_lang_pug_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/vue-cal/event.vue?vue&type=template&id=74481f79&lang=pug&
+// CONCATENATED MODULE: ./src/vue-cal/event.vue?vue&type=template&id=36fac408&lang=pug&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/vue-cal/event.vue?vue&type=script&lang=js&
 
@@ -61000,6 +61067,8 @@ var eventvue_type_template_id_74481f79_lang_pug_staticRenderFns = []
 
 
 
+//
+//
 //
 //
 //
@@ -61070,6 +61139,20 @@ var eventvue_type_template_id_74481f79_lang_pug_staticRenderFns = []
     } // Is the event displayed in the all-day bar.
 
   },
+  data: function data() {
+    return {
+      // Event touch detection with 30px threshold.
+      touch: {
+        dragThreshold: 30,
+        // px.
+        startX: 0,
+        startY: 0,
+        // Detect if the event touch start + touch end was a drag or a tap.
+        // If it was a drag, don't call the event-click handler.
+        dragged: false
+      }
+    };
+  },
   methods: {
     /**
      * On event mousedown.
@@ -61111,13 +61194,16 @@ var eventvue_type_template_id_74481f79_lang_pug_staticRenderFns = []
      * The mouseup handler is global (whole document) and initialized in index.vue on mounted.
      * It handles the mouseup on cell, events, and everything.
      * All mouseup on event, should be put there to avoid conflicts with other cases.
+     * This function is also called on touchend on the event.
      */
     onMouseUp: function onMouseUp(e) {
       // Don't allow mouseup to be fired on different event than mousedown for the onEventClick function.
-      if (this.domEvents.focusAnEvent._eid === this.event._eid) {
+      if (this.domEvents.focusAnEvent._eid === this.event._eid && !this.touch.dragged) {
         // This is used in the global mouseup handler.
         this.domEvents.focusAnEvent.mousedUp = true;
       }
+
+      this.touch.dragged = false; // After the touchend happens, reset the dragged flag.
     },
     onMouseEnter: function onMouseEnter(e) {
       e.preventDefault();
@@ -61127,9 +61213,27 @@ var eventvue_type_template_id_74481f79_lang_pug_staticRenderFns = []
       e.preventDefault();
       this.vuecal.emitWithEvent('event-mouse-leave', this.event);
     },
+    // Detect if user taps on an event or drags it. If dragging don't fire the event-click handler (if any).
+    onTouchMove: function onTouchMove(e) {
+      // Skip the maths if there is no event click handler.
+      if (typeof this.vuecal.onEventClick !== 'function') return;
+      var _e$touches$ = e.touches[0],
+          clientX = _e$touches$.clientX,
+          clientY = _e$touches$.clientY;
+      var _this$touch = this.touch,
+          startX = _this$touch.startX,
+          startY = _this$touch.startY,
+          dragThreshold = _this$touch.dragThreshold;
+
+      if (Math.abs(clientX - startX) > dragThreshold || Math.abs(clientY - startY) > dragThreshold) {
+        this.touch.dragged = true;
+      }
+    },
     onTouchStart: function onTouchStart(e) {
-      // Prevent the text selection prompt on touch device if editable events - unless on title.
+      this.touch.startX = e.touches[0].clientX;
+      this.touch.startY = e.touches[0].clientY; // Prevent the text selection prompt on touch device if editable events - unless on title.
       // So the delete button will show up nicely without the text prompt.
+
       if (this.vuecal.editEvents.drag && !e.target.className.includes('vuecal__event-title')) {
         e.returnValue = false;
       }
@@ -61279,8 +61383,8 @@ var eventvue_type_style_index_0_lang_scss_ = __webpack_require__("61f2");
 
 var event_component = normalizeComponent(
   vue_cal_eventvue_type_script_lang_js_,
-  eventvue_type_template_id_74481f79_lang_pug_render,
-  eventvue_type_template_id_74481f79_lang_pug_staticRenderFns,
+  eventvue_type_template_id_36fac408_lang_pug_render,
+  eventvue_type_template_id_36fac408_lang_pug_staticRenderFns,
   false,
   null,
   null,
@@ -62058,6 +62162,7 @@ var styles = __webpack_require__("1332");
 //
 //
 //
+//
 
 
 
@@ -62685,7 +62790,7 @@ var vue_calvue_type_script_lang_js_dateUtils = new date_DateUtils(textsDefaults)
           break;
 
         case 'day':
-          firstCellDate = startDate[next ? 'addDays' : 'subtractDays'](1);
+          firstCellDate = ud[next ? 'addDays' : 'subtractDays'](startDate, 1);
           break;
       }
 
@@ -63131,7 +63236,9 @@ var vue_calvue_type_script_lang_js_dateUtils = new date_DateUtils(textsDefaults)
 
         if (!endTimeMinutes || endTimeMinutes === vue_calvue_type_script_lang_js_minutesInADay) {
           // This also applies on timeless events, all-day events & multiple-day events.
-          end.setHours(23, 59, 59, 0);
+          if (!_this4.time) end.setHours(23, 59, 59, 0); // Sets to the same day at 23.59.59.
+          else end.setSeconds(end.getSeconds() - 1); // Sets to the previous day at 23.59.59.
+
           endDateF = ud.formatDateLite(end);
           endTimeMinutes = vue_calvue_type_script_lang_js_minutesInADay;
         }
@@ -63464,12 +63571,16 @@ var vue_calvue_type_script_lang_js_dateUtils = new date_DateUtils(textsDefaults)
         timeCells.push({
           hours: Math.floor(i / 60),
           minutes: i % 60,
-          label: this.utils.date.formatTime(i, this.timeFormat || (this.twelveHour ? 'h:mm{am}' : 'HH:mm')),
+          label: this.utils.date.formatTime(i, this.TimeFormat),
+          // The texts (3rd param) are given on Vue Cal init.
           value: i
         });
       }
 
       return timeCells;
+    },
+    TimeFormat: function TimeFormat() {
+      return this.timeFormat || (this.twelveHour ? 'h:mm{am}' : 'HH:mm');
     },
     // Filter out the day splits that are hidden.
     daySplits: function daySplits() {
@@ -66891,6 +67002,49 @@ module.exports = function (it) {
 
 /******/ })["default"];
 //# sourceMappingURL=vueCompareImage.common.js.map
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CalComponent.vue?vue&type=template&id=dd83cd8c&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CalComponent.vue?vue&type=template&id=dd83cd8c& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { attrs: { id: "cal-comp" } },
+    [
+      _c("vue-cal", {
+        staticClass: "vuecal--rounded-theme",
+        attrs: {
+          "hide-view-selector": "",
+          time: false,
+          "active-view": "month",
+          small: "",
+          locale: _vm.locale,
+          "disable-views": ["years", "year", "week", "day"],
+          events: _vm.events,
+          "events-count-on-year-view": ""
+        }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
 
 /***/ }),
 
@@ -91978,6 +92132,7 @@ leaflet__WEBPACK_IMPORTED_MODULE_7__["Icon"].Default.mergeOptions({
 
 Vue.component('image-card', __webpack_require__(/*! ./components/ImageCardComponent.vue */ "./resources/js/components/ImageCardComponent.vue")["default"]);
 Vue.component('map-component', __webpack_require__(/*! ./components/MapComponent.vue */ "./resources/js/components/MapComponent.vue")["default"]);
+Vue.component('cal-component', __webpack_require__(/*! ./components/CalComponent.vue */ "./resources/js/components/CalComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -92036,6 +92191,75 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/CalComponent.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/CalComponent.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CalComponent_vue_vue_type_template_id_dd83cd8c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CalComponent.vue?vue&type=template&id=dd83cd8c& */ "./resources/js/components/CalComponent.vue?vue&type=template&id=dd83cd8c&");
+/* harmony import */ var _CalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CalComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/CalComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CalComponent_vue_vue_type_template_id_dd83cd8c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CalComponent_vue_vue_type_template_id_dd83cd8c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CalComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CalComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/CalComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CalComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CalComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CalComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CalComponent.vue?vue&type=template&id=dd83cd8c&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/CalComponent.vue?vue&type=template&id=dd83cd8c& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CalComponent_vue_vue_type_template_id_dd83cd8c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CalComponent.vue?vue&type=template&id=dd83cd8c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CalComponent.vue?vue&type=template&id=dd83cd8c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CalComponent_vue_vue_type_template_id_dd83cd8c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CalComponent_vue_vue_type_template_id_dd83cd8c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

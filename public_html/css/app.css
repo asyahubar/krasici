@@ -555,9 +555,8 @@ footer span a:visited {
   border: 1px solid #EDF2F4 !important;
 }
 
-.vuecal__cell--today,
-.vuecal__cell--current {
-  background-color: #BEE3E3;
+.vuecal__cell--today:before {
+  background-color: #BEE3E3 !important;
 }
 
 .vuecal:not(.vuecal--day-view) .vuecal__cell--selected {
@@ -573,6 +572,14 @@ footer span a:visited {
 .vuecal__cell--highlighted:not(.vuecal__cell--has-splits),
 .vuecal__cell-split--highlighted {
   background-color: #BEE3E3;
+}
+
+.vuecal__cell--has-events {
+  background-color: #fffacd;
+}
+
+.vuecal__cell-events-count {
+  display: none;
 }
 
 .vuecal__arrow.vuecal__arrow--highlighted,
