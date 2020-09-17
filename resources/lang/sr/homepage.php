@@ -14,7 +14,7 @@ return [
 	],
 	'intro' => [
 		'header' => 'ugodan apartman u krašićima',
-		'paragraph' => '*nesto*'
+		'paragraph' => 'Apartman se nalazi na samo 500 koraka od kristalno čistog mora vidljivog s prostrane terase. Stan je udoban i potpuno opremljen. Sve je uključeno, tiho okruženje, čist vazduh, pejzaži savršeni za fotografisanje. Čak i ako ste prvi put u Crnoj Gori, pružićemo vam sve informacije koje će vam zatrebati.',
 	],
 	'flat' => [
 		'header' => 'apartman',
@@ -90,7 +90,7 @@ return [
 	],
 	'village' => [
 		'header' => 'Gradić Krašići može da vam pruži',
-		'paragraph' => 'Plaže sa kristalno čistom vodom-',
+		'paragraph' => 'Okupajte se u kristalno čistoj vodi Boka Kotorskog zaliva; idite u obilazak brodom; večerajte u mediteranskim restoranima, pogledajte staru vojnu bazu. Naselje ima turističku agenciju, autobusku stanicu, 1 veću i 2 manje prodavnice. Sve je na manje od 15 minuta hoda!',
 	],
 	'beaches' => [
 		'header' => 'plaže',
