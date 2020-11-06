@@ -15,15 +15,15 @@
 
 %headers-margins {
 	margin-left: 15px;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 #main-img {
 	width: inherit;
 	max-height: 90vh;
 
-	.vci-container {
-		max-height: calc(100vh - 56px);
+	img {
+		max-width: 100%;
 	}
 }
 
@@ -149,7 +149,7 @@
 
 			.card {
 				width: 365px;
-				margin: 0 1rem 2rem 0;
+				margin: 0 10px 20px 0;
 
 				h4 {
 					@extend %headers-margins;
@@ -389,17 +389,34 @@ footer {
 	padding-right: 0 !important;
 }
 .vuecal__cell-content {
-	min-height: 5rem;
 	font-size: $five;
 }
 .vuecal__cell {
+	min-height: 50px;
 
 	&:before {
 		border: 1px solid $hr !important;
 	}
 }
-.vuecal__cell--today, .vuecal__cell--current {
-	background-color: $main-light;
+.vuecal--date-picker:not(.vuecal--day-view) { 
+
+	.vuecal__cell--today { 
+	
+		.vuecal__cell-content {
+			border-color: $main !important;
+		}
+	}
+
+	.vuecal__cell--selected {
+
+		.vuecal__cell-content {
+			background-color: $main !important;
+		}		
+	}
+}
+.vuecal__cell--has-events {
+	background-color: #fffacd;
+	text-decoration: line-through !important;
 }
 .vuecal:not(.vuecal--day-view) .vuecal__cell--selected {
 	background-color: $main-light;
@@ -411,6 +428,12 @@ footer {
 .vuecal__cell--highlighted:not(.vuecal__cell--has-splits),
 .vuecal__cell-split--highlighted {
 	background-color: $main-light;
+}
+.vuecal__cell--has-events {
+	background-color: #fffacd;
+}
+.vuecal__cell-events-count {
+	display: none;
 }
 .vuecal__arrow.vuecal__arrow--highlighted,
 .vuecal__view-btn.vuecal__view-btn--highlighted {

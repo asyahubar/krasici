@@ -111,6 +111,8 @@ return [
 			'herceg_novi' => 'Herceg-Novi',
 			'flower_island' => 'Island of Flowers',
 			'igalo' => 'Igalo',
+			'blue_cave' => 'Blue cave',
+			'mamula_island' => 'Mamula island',
 		]
 	],
 	'map' => 'location',

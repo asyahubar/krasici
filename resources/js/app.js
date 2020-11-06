@@ -16,8 +16,6 @@ import 'vue-cal/dist/i18n/sr.js'
 import Scrollspy from 'vue2-scrollspy';
 Vue.use(Scrollspy);
 
-import VueCompareImage from 'vue-compare-image';
-
 import 'leaflet/dist/leaflet.css';
 
 import { Icon } from 'leaflet';
@@ -42,6 +40,7 @@ Icon.Default.mergeOptions({
 
 Vue.component('image-card', require('./components/ImageCardComponent.vue').default);
 Vue.component('map-component', require('./components/MapComponent.vue').default);
+Vue.component('cal-component', require('./components/CalComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

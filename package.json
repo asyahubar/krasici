@@ -11,25 +11,25 @@
     },
     "devDependencies": {
         "axios": "^0.19",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^4.5.3",
         "cross-env": "^7.0",
         "jquery": "^3.5.1",
-        "laravel-mix": "^5.0.1",
-        "lodash": "^4.17.19",
+        "laravel-mix": "^5.0.9",
+        "lodash": "^4.17.20",
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
-        "sass": "^1.20.1",
+        "sass": "^1.29.0",
         "sass-loader": "^8.0.0",
-        "vue": "^2.5.17",
-        "vue-template-compiler": "^2.6.10"
+        "vue": "^2.6.12",
+        "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "@babel/core": "^7.10.4",
+        "@babel/core": "^7.12.3",
         "lazysizes": "^5.2.2",
-        "leaflet": "^1.6.0",
-        "vue-cal": "^3.6.5",
-        "vue-compare-image": "^0.2.0",
-        "vue2-leaflet": "^2.5.2",
+        "leaflet": "^1.7.1",
+        "prod": "^1.0.1",
+        "vue-cal": "^3.8.4",
+        "vue2-leaflet": "^2.6.0",
         "vue2-scrollspy": "^2.3.1"
     }
 }

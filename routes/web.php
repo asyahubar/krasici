@@ -24,8 +24,3 @@ Route::group([
 	// TODO: book, feedback and terms
 
 });
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});

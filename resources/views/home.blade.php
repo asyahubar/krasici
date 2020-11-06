@@ -3,13 +3,15 @@
 
 @section('above-fold')
 	<div id="main-img">
-		<vue-compare-image 
-		left-image="{{asset("storage/img_og/terasse_view_left.png")}}" 
-		right-image="{{asset("storage/img_og/terasse_view_right.png")}}"
-		hover
-		left-image-alt="погляд з тераси вліво"
-		right-image-alt="погляд з тераси вправо"
-		/>
+		<img
+		data-sizes="auto"
+		src="{{asset('storage/img_xs/main_header.jpg')}}"
+		srcset="
+			{{ asset('storage/img_m/main_header.jpg') }} 420w,
+		    {{ asset('storage/img_l/main_header.jpg') }} 695w,
+		    {{ asset('storage/img_og/main_header.jpg') }}  900w" 
+		class="lazyload blur-up main-header" 
+		title="main header" />
 	</div>
 @endsection
 
@@ -177,10 +179,7 @@
 
 		<section id="calendar">
 			<h2>{{ __("homepage.calendar") }}</h2>
-			<vue-cal hide-view-selector :time="false" active-view="month" small locale="{{app()->getLocale()}}" class="vuecal--rounded-theme" :disable-views="['years', 'year', 'week', 'day']">
-				<i v-slot:arrow-prev aria-hidden="true" class="v-icon material-icons">arrow_back</i>
-				<i v-slot:arrow-next aria-hidden="true" class="v-icon material-icons">arrow_forward</i>
-			</vue-cal>
+			<cal-component locale="{{app()->getLocale()}}"></cal-component>
 		</section>
 
 	</div>
