@@ -50,5 +50,5 @@ Vue.component('cal-component', require('./components/CalComponent.vue').default)
 
 const app = new Vue({
     el: '#app',
-	components: { VueCal, VueCompareImage }
+	components: { VueCal, }
 });
